@@ -362,33 +362,47 @@
         </div>
     </footer>
 
-    <div class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-4 sm:p-6" id="info-modal">
-      <div class="absolute inset-0 bg-surface/80 backdrop-blur-md" onclick="document.getElementById('info-modal').classList.add('hidden')"></div>
+<div class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-4 sm:p-6" id="info-modal">
+  <div class="absolute inset-0 bg-surface/80 backdrop-blur-md" onclick="document.getElementById('info-modal').classList.add('hidden')"></div>
+  
+  <div class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto glass-card rounded-xl p-6 sm:p-10 inner-glow shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-outline-variant/10">
+    
+    <button class="sticky float-right -top-2 -right-2 sm:absolute sm:top-6 sm:right-6 material-symbols-outlined text-outline hover:text-on-surface bg-surface/50 sm:bg-transparent rounded-full p-1" data-icon="close" onclick="document.getElementById('info-modal').classList.add('hidden')">
+      close
+    </button>
+
+    <div class="space-y-6 clear-both">
+      <div class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary font-label text-xs uppercase tracking-widest border border-primary/20">Our Story</div>
       
-      <div class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto glass-card rounded-xl p-6 sm:p-10 inner-glow shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-outline-variant/10">
-        
-        <button class="sticky float-right -top-2 -right-2 sm:absolute sm:top-6 sm:right-6 material-symbols-outlined text-outline hover:text-on-surface bg-surface/50 sm:bg-transparent rounded-full p-1" data-icon="close" onclick="document.getElementById('info-modal').classList.add('hidden')">
-          close
-        </button>
+      <h2 class="font-headline text-2xl sm:text-4xl font-bold tracking-tight">Your Trusted Partner in Thailand’s Living</h2>
+      
+      <div class="space-y-8 text-on-surface-variant leading-relaxed text-base sm:text-lg font-light">
+        <div class="block overflow-hidden">
+          <img src="img/our_story/max.jpg" alt="Vachirapong (Max)" class="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl object-cover float-left mr-4 mb-2 shadow-lg border border-outline-variant/20">
+          <p>Born and raised in Bangkok, <strong>Vachirapong (Max)</strong> is a seasoned Digital Nomad who understands the true value of Thai real estate. Having lived globally, he founded this platform to help international residents find premium freehold condos at unbeatable value.</p>
+        </div>
 
-        <div class="space-y-6 clear-both">
-          <div class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary font-label text-xs uppercase tracking-widest border border-primary/20">Our Story</div>
-          
-          <h2 class="font-headline text-2xl sm:text-4xl font-bold tracking-tight">Your Trusted Partner in Thailand’s Living</h2>
-          
-          <div class="space-y-4 text-on-surface-variant leading-relaxed text-base sm:text-lg font-light">
-            <p>Born and raised in Bangkok, <strong>Vachirapong (Max)</strong> is a seasoned Digital Nomad who understands the true value of Thai real estate. Having lived globally, he founded this platform to help international residents find premium freehold condos at unbeatable value.</p>
-            <p>Backed by a dedicated team of experts—including <strong>Akkharamani (Aum)</strong>, a top-tier sales achiever specializing in everything from luxury estates to high-value distressed assets and legal structures like Freehold, Leasehold, and Usufruct—we offer more than just listings.</p>
-            <p>From legal security to long-term property management and renovations, we are your trusted partner in building a life in Thailand.</p>
+        <div class="block overflow-hidden">
+          <img src="img/our_story/aum.jpg" alt="Akkharamani (Aum)" class="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl object-cover float-right ml-4 mb-2 shadow-lg border border-outline-variant/20">
+          <p>Backed by a dedicated team of experts—including <strong>Akkharamani (Aum)</strong>, a top-tier sales achiever specializing in everything from luxury estates to high-value distressed assets and legal structures like Freehold, Leasehold, and Usufruct—we offer more than just listings.</p>
+        </div>
+
+        <div class="space-y-4">
+          <p>From legal security to long-term property management and renovations, we are your trusted partner in building a life in Thailand.</p>
+          <div class="rounded-xl overflow-hidden border border-outline-variant/20 shadow-inner bg-surface/30">
+            <img src="img/our_story/signing.jpg" alt="Client signing contract" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+            <p class="text-xs italic p-3 text-center opacity-70">Empowering your dreams with secure legal transitions.</p>
           </div>
-
-          <button class="w-full liquid-gradient text-on-primary py-4 sm:py-5 rounded-xl font-bold shadow-xl hover:opacity-90 transition-opacity" 
-                  onclick="document.getElementById('info-modal').classList.add('hidden'); window.location.href='#listings';">
-            Start Your Journey
-          </button>
         </div>
       </div>
+
+      <button class="w-full liquid-gradient text-on-primary py-4 sm:py-5 rounded-xl font-bold shadow-xl hover:opacity-90 transition-opacity" 
+              onclick="document.getElementById('info-modal').classList.add('hidden'); window.location.href='#listings';">
+        Start Your Journey
+      </button>
     </div>
+  </div>
+</div>
 
     <script>
         // Trigger Modal
