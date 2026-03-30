@@ -95,6 +95,45 @@
           html {
             scroll-behavior: smooth;
           }
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #0f1419; /* สี background เดียวกับหน้าเว็บ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+.loader-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    color: #a6c8ff;
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    animation: switchText 4s infinite;
+}
+
+/* สลับข้อความ */
+.text-1 { animation-delay: 0s; }
+.text-2 { animation-delay: 2s; }
+
+@keyframes switchText {
+    0%, 45% { opacity: 1; transform: translateY(0); }
+    50%, 95% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 0; }
+}
+
+/* เอฟเฟกต์ Fade Out เมื่อโหลดเสร็จ */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
         </style>
     <style>
         body {
@@ -103,9 +142,29 @@
       </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<div id="preloader">
+    <div class="loader-text text-1">LIVING GEMS IN THAILAND</div>
+    <div class="loader-text text-2">www.lg.in.th</div>
+    
+    <div class="w-48 h-[1px] bg-primary/20 mt-12 overflow-hidden relative">
+        <div class="absolute inset-0 bg-primary w-1/2 animate-[loading_2s_infinite_ease-in-out]"></div>
+    </div>
+</div>
+
+<script>
+    // เพิ่ม Animation สำหรับเส้น Loading เล็กๆ ใน Tailwind config หรือเพิ่มแบบนี้
+    document.head.insertAdjacentHTML('beforeend', `<style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+    </style>`);
+</script>
+
     <div class="fixed top-0 w-full z-[100] bg-surface/70 dark:bg-[#0f1419]/70 backdrop-blur-[40px] flex justify-between items-center px-8 py-4 w-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] shadow-[inset_0_0.5px_0_0_rgba(255,255,255,0.2)]">
       <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-[#a6c8ff] text-xl min-[540px]:text-2xl" data-icon="diamond">diamond</span>
+        <span class="material-symbols-outlined text-[#a6c8ff] text-xl min-[540px]:text-2xl" data-icon="location_city">location_city</span>
         <span class="font-headline font-extrabold text-[#a6c8ff] uppercase text-lg min-[540px]:text-xl">
           LIVING GEMS IN THAILAND
         </span>
@@ -319,7 +378,7 @@
           
           <div class="space-y-4 text-on-surface-variant leading-relaxed text-base sm:text-lg font-light">
             <p>Born and raised in Bangkok, <strong>Vachirapong (Max)</strong> is a seasoned Digital Nomad who understands the true value of Thai real estate. Having lived globally, he founded this platform to help international residents find premium freehold condos at unbeatable value.</p>
-            <p>Backed by a dedicated team of experts—including <strong>Akkharamani (Aum)</strong>, a top-tier sales achiever, and <strong>Issariya (Aom)</strong>, a specialist in luxury properties and legal structures like Usufruct—we offer more than just listings.</p>
+            <p>Backed by a dedicated team of experts—including <strong>Akkharamani (Aum)</strong>, a top-tier sales achiever specializing in everything from luxury estates to high-value distressed assets and legal structures like Freehold, Leasehold, and Usufruct—we offer more than just listings.</p>
             <p>From legal security to long-term property management and renovations, we are your trusted partner in building a life in Thailand.</p>
           </div>
 
@@ -339,6 +398,15 @@
 
         // Update Year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            // หน่วงเวลาเล็กน้อยเพื่อให้ SVG/Fonts มั่นใจว่าเรนเดอร์เสร็จจริงๆ (เช่น 2.4 วินาที)
+            setTimeout(() => {
+                preloader.classList.add('loader-hidden');
+            }, 2400);
+        });
     </script>
 </body>
 </html>
