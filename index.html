@@ -1,60 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Gems in Thailand | Premium Real Estate</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Living Gems in Thailand</h1>
-            <p class="tagline">Curating Exceptional Living Gems in Thailand</p>
-        </div>
-    </header>
 
-    <main class="container">
-        <section class="property-hero">
-            <div class="badge">Recently Renovated</div>
-            <h2>Modern Studio near MRT</h2>
-            <p class="location">📍 Lumpini Condo Town Ramindra-Laksi</p>
-        </section>
-
-        <section class="gallery">
-            <div class="grid">
-                <img src="images/1.jpg" alt="Living Room">
-                <img src="images/2.jpg" alt="Bedroom">
-                <img src="images/3.jpg" alt="Kitchen">
-                <img src="images/4.jpg" alt="Bathroom">
-                <img src="images/5.jpg" alt="View">
-                <img src="images/6.jpg" alt="Details">
-            </div>
-        </section>
-
-        <section class="details">
-            <div class="price-box">
-                <span class="label">Asking Price</span>
-                <span class="price">1.8 Million Baht</span>
-                <span class="usd">Approx. $50,000 USD</span>
-            </div>
-            <ul class="features">
-                <li>✨ Fully Furnished & Ready to Move-in</li>
-                <li>🚇 2-min walk to MRT Station</li>
-                <li>🏢 28 sq.m. | Tower B, 5th Floor</li>
-                <li>🛡️ Foreign Quota Available</li>
-            </ul>
-        </section>
-
-        <section class="cta">
-            <a href="mailto:info@lg.in.th" class="btn">Inquire via Email</a>
-            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="btn whatsapp">WhatsApp Now</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Living Gems in Thailand | lg.in.th</p>
-    </footer>
-</body>
-</html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LIVING GEMS IN THAILAND | Discover Hidden Gems near Bangkok BTS/MRT Stations</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#a6c8ff",
+              "primary": "#a6c8ff",
+              "on-primary": "#00315f",
+              "surface-bright": "#353a3f",
+              "secondary": "#e9c349",
+              "secondary-container": "#af8d11",
+              "surface-container-low": "#171c21",
+              "outline-variant": "#434750",
+              "inverse-on-surface": "#2c3137",
+              "surface-container-highest": "#30353b",
+              "on-error": "#690005",
+              "on-tertiary-fixed": "#1a1c1d",
+              "inverse-primary": "#355f97",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-container-high": "#252a30",
+              "inverse-surface": "#dee3ea",
+              "surface-dim": "#0f1419",
+              "tertiary-fixed-dim": "#c6c6c8",
+              "secondary-fixed": "#ffe088",
+              "surface-tint": "#a6c8ff",
+              "surface-container": "#1b2025",
+              "on-tertiary-container": "#999a9c",
+              "on-secondary-container": "#342800",
+              "surface-container-lowest": "#0a0f14",
+              "tertiary": "#c6c6c8",
+              "error": "#ffb4ab",
+              "on-secondary-fixed": "#241a00",
+              "primary-container": "#003261",
+              "outline": "#8e909b",
+              "tertiary-container": "#303234",
+              "tertiary-fixed": "#e2e2e4",
+              "error-container": "#93000a",
+              "surface": "#0f1419",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed-dim": "#e9c349",
+              "on-tertiary-fixed-variant": "#454749",
+              "on-background": "#dee3ea",
+              "background": "#0f1419",
+              "on-primary-fixed-variant": "#18477e",
+              "on-primary-fixed": "#001c3b",
+              "on-secondary": "#3c2f00",
+              "on-surface": "#dee3ea",
+              "on-tertiary": "#2f3132",
+              "on-primary-container": "#739bd7",
+              "primary-fixed": "#d5e3ff",
+              "on-surface-variant": "#c4c6d2",
+              "surface-variant": "#30353b"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(48, 53, 59, 0.4);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+      }
+      .liquid-gradient {
+        background: linear-gradient(135deg, #a6c8ff 0%, #003261 100%);
+      }
+      .inner-glow {
+        box-shadow: inset 0 0.5px 0 0 rgba(255, 255, 255, 0.2);
+      }
+      .text-shadow-premium {
+        text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<div class="fixed top-0 w-full z-[100] bg-surface/70 dark:bg-[#0f1419]/70 backdrop-blur-[40px] flex justify-between items-center px-8 py-4 w-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] shadow-[inset_0_0.5px_0_0_rgba(255,255,255,0.2)]">
+  <div class="flex items-center gap-2">
+    <span class="material-symbols-outlined text-[#a6c8ff] text-xl min-[540px]:text-2xl" data-icon="diamond">diamond</span>
+    <span class="font-headline font-extrabold text-[#a6c8ff] uppercase text-lg min-[540px]:text-xl">
+      LIVING GEMS IN THAILAND
+    </span>
+  </div>
+  <div class="hidden min-[540px]:block font-extrabold tracking-tighter text-[#a6c8ff] font-headline min-[540px]:text-lg">
+    www.lg.in.th
+  </div>
+</div>
+<main class="pt-24 pb-20 px-6 lg:px-12 max-w-[1600px] mx-auto">
+<!-- Hero Section -->
+<section class="relative min-h-[530px] flex flex-col justify-center items-start gap-8 py-16 px-4 md:px-8 overflow-hidden rounded-xl">
+<!-- Background Image with deep blur -->
+<div class="absolute inset-0 -z-10">
+<img class="w-full h-full object-cover scale-110 blur-[60px] opacity-40" data-alt="Luxurious modern villa pool area at twilight with soft purple and blue ambient lighting and tropical landscaping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIW8rnqwqMPb6jwHgW4mHCWw3PRQIDUeZiXvrLbvmcsK_SahWVwlEk1k1UH9Rva5GTiEyGjO58h4JBSSf961u5w6n284Ht7nIEr1jTV1fvCnr4b3Ws8g4YfWGOdIpeLY604F_fSL3NWzBqOAp9DlaM--xoERD2q--kOF5rOqzsQp2MIwE2iHILfNesYiltONvaDLGom7UNGrzCc09u1UiQKiWs15QKCqCrW3VhlThjXPPrHjVBzQ9AR4vfvsfHiAH_pPh707Va8Ng"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface to-surface"></div>
+</div>
+<div class="max-w-3xl space-y-6">
+<h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-shadow-premium">
+                    Living Gems in Thailand: <span class="text-primary">Curating premium properties</span> with local expertise.
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant font-light max-w-2xl leading-relaxed">
+                    Professional photography and 10+ years of curated luxury real estate experience in the Land of Smiles.
+                </p>
+<button class="liquid-gradient text-on-primary px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-[1.02] active:scale-95 transition-all flex items-center gap-2 group">
+                    [Read More]
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Search & Filter Area (Asymmetric Layout) -->
+<div class="mt-12 mb-16 flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="w-full md:w-2/3 bg-surface-container-highest/40 backdrop-blur-xl p-2 rounded-xl inner-glow flex items-center">
+<span class="material-symbols-outlined px-4 text-outline" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface w-full py-4 text-lg" placeholder="Search by location or project name..." type="text"/>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-bold m-1 whitespace-nowrap">Find Property</button>
+</div>
+<div class="flex gap-3">
+<div class="bg-surface-container-low px-5 py-3 rounded-full text-sm font-label uppercase tracking-widest text-on-surface-variant border border-outline-variant/15 cursor-pointer hover:bg-surface-container-high transition-colors">
+                    Bangkok
+                </div>
+<div class="bg-secondary text-on-secondary px-5 py-3 rounded-full text-sm font-label uppercase tracking-widest font-bold shadow-lg cursor-pointer">
+                    Phuket
+                </div>
+<div class="bg-surface-container-low px-5 py-3 rounded-full text-sm font-label uppercase tracking-widest text-on-surface-variant border border-outline-variant/15 cursor-pointer hover:bg-surface-container-high transition-colors">
+                    Pattaya
+                </div>
+</div>
+</div>
+<!-- Property Card List (Bento-inspired Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern luxury condo interior with floor to ceiling windows overlooking the Bangkok skyline at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7SFuCQ7xhhVbFHEmXibC3F4Ve9RZvxm9jZSIZg2Uzk42jeSVC2X9mkdvhlgqIa_pQo7kdeNIfSZSq816cIs_Vk67LT65lEZthJQpEg8kK9KrnneGVYD-uxomo7Sup8ll3dQH869TrDwHj2n_OXpMVX3q4lL4oot9U45c5L23uUj4xrdDuN1sgca2RW6KxeIU-B1ovdfkVuW-VkFpWpNxbqBgLwPinJigXcBToO3A8xCDFgpEiPAiY-P_0sksPetoq9mD_yVI9gfc"/>
+<div class="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-on-primary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Foreign Quota Available
+                    </div>
+<div class="absolute bottom-4 left-4 bg-secondary/90 backdrop-blur-md text-on-secondary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Freehold
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿1,800,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $50,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">Lumpini Condo Town Ramindra-Laksa</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">28 m² Studio near MRT Pink Line</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Exotic infinity pool at a beachfront villa in Phuket with palm trees and turquoise ocean horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqbaH__BRLMou3Qj38PpI0vINv93bgha1bbfdf_Hfe63goj62RLvwk1E1D00qfjsppfNwOGrEdo9nQsKN_03t_67-iB71_yZid3y6yLwJuIKHBwEBu47pE9zfbDXqXH0dhDnjwKoJncMv847WWAq1E9I0wo2IwH5niuJXUhZ3jCWBI1ZBrU3VoCY0_IlcBtogb_NcdLN7YDiYUOYXAlf1AIyswb__GQCaXAv3GaZoP6a8uXF0zCKdWvoTpfOJDeg5IVpohJNEAPZo"/>
+<div class="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-on-primary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Foreign Quota Available
+                    </div>
+<div class="absolute bottom-4 left-4 bg-secondary/90 backdrop-blur-md text-on-secondary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Freehold
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿45,000,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $1,250,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">The Pearl Oceanfront Villa</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">450 m² 4BR Private Pool Villa Kamala</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Ultra-modern minimalist kitchen and dining area in a luxury high-rise apartment with marble accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD065qiWbKgpBgdixkz0aAHrBqlBnVq_WJfheXyDW-cXbhm30GE1jrgeVl32D8irKkro8MJsPj7lRCSgyCgW6OCfXJkHyL6HcW5ulz8qoxjfufaF4om7PzO5yH96Fur0mNj7_S_623mlDLYf_EY8PuMNt5e_Isu0rMhb3_YI_ZMeQ9jxfwVq9TLXsxfuNDbZPx5MytesU3zTomAJgZexFY4AVjWuPbNaCWEWl3EVKVtSKfq4ElQ8rSSFGpIBHLmPqetnKmKH_z9VZE"/>
+<div class="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-on-primary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Foreign Quota Available
+                    </div>
+<div class="absolute bottom-4 left-4 bg-secondary/90 backdrop-blur-md text-on-secondary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Freehold
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿12,400,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $345,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">Sukhumvit 24 Sky Residence</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">82 m² 2BR Luxury Condo near BTS Phrom Phong</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stylish boutique hotel-inspired bedroom with soft linen bedding and warm mood lighting in a luxury resort" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUQBJfuG9_GYxKahj3Pv-56nTVCGlUSyfeHJj-t8QazjI578xW39Fc9PrO6HwYw-mSyDNHA2DoezeO-4E-HO4EiZllxFgiIPDVjgvtieQmU7XyZcpdSPGfxzIYi8Ein4Pyu0FToZi2dw8BEwqjyb17EqO6cZiKaDjjacV_HawnOGV_tnMRjQABRssmAVbrgLGNCVrIDswnxxat9WAzuqbT_wM_Kg7F7fzFmgN4NCWsbx9Fw2uCevaB3QSQm3qChCKqcHKGSEL76Hs"/>
+<div class="absolute bottom-4 left-4 bg-secondary/90 backdrop-blur-md text-on-secondary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Freehold
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿5,900,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $165,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">The Riviera Jomtien</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">45 m² 1BR Ocean View High Floor</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist architectural shot of a modern white building facade in Bangkok with shadows and clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhv-1FYBSSo_hi-U0Yj7iEPgmj2gPjYMYufpyGoPLhe7fNBMyBaDKRU4TsosQFojpGeeEslRLLGoHz5KLyi4C9TortavOECsVzMBIOuGKf0ZDcoWakhcNlefBpDujasLYI7Yfn5iBu4geahAC_R_EVNlUnDsjs6zWxm2RsI3HFGdL6nScVcMYRnsubzcie3H9V3UiZMFw0Q9z1m_FBcb_t_hSnxPHUpBaUgVaDDoLqyc_u3mJmL9wzmD30jeqCEw960sQe1c3oGDY"/>
+<div class="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-on-primary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Foreign Quota Available
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿22,500,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $625,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">Ari Modern Artisan House</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">220 m² Renovated 3BR Designer Home</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden group hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stunning rooftop lounge area with fire pit and city lights panoramic view in Bangkok luxury development" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bHJXekomLRHsLyhzAIej6wHpVIOlIZmKR-XY_PifM_LKWr3W9tJQK9v2busfGzEyz1CyvPwGMHovd_8XYXsItQp-WNP0iHdBOOpGWPk9YEoCgE-avhLk38Mzxv2s64r7cuDFLK-y0xv_W4RBttGMqtgYmal-iu3Iv5FQXeBieCUQ6G4k0Tsp49nEvMyryRb8_Ws8-l4-L3s2l-DYxIVH5j6II9MhAjvrTRPDzsy705XWyDLQh4Ed0uDoWVmX93BpMUffxWWCePU"/>
+<div class="absolute bottom-4 left-4 bg-secondary/90 backdrop-blur-md text-on-secondary text-[0.65rem] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
+                        Freehold
+                    </div>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-1">
+<div class="font-headline text-3xl font-extrabold text-primary tracking-tight">฿3,200,000</div>
+<div class="text-on-surface-variant font-label text-sm tracking-wide">Approx. $89,000 USD</div>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline text-xl font-bold truncate text-on-surface">Base Garden Rama 9</h3>
+<p class="text-on-surface-variant text-sm truncate font-body">34 m² 1BR City Life with Garden View</p>
+</div>
+<button class="w-full glass-card border border-outline-variant/20 text-on-surface py-4 rounded-xl font-semibold inner-glow hover:bg-surface-container-highest/60 transition-colors mt-4">
+                        More Details
+                    </button>
+</div>
+</div>
+</div>
+<!-- Featured Collections Section (Asymmetric Bento) -->
+<section class="mt-24 space-y-12">
+<h2 class="font-headline text-3xl font-bold">Curated Collections</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[600px] md:h-[450px]">
+<div class="md:col-span-7 relative group rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Aerial view of a private beach resort in Thailand with crystal clear water and wooden docks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_x2rshPg0JJGaGTOCV0iC19okEFWNzmU0UVD6Xm0UXJ10_qXFvYSRhndGLcprePVjUKkwn2CYnH3GMhUMjC-aHU4EUGiM5Sw_2I5Bi01tcZOvbEdg4R2HBCDcatkkjvGOhXQo-1a5fO1V8FOm34bFa6Bvv34YLhf_jx7UPS7sDCPJU_K6a0y41X7AGeg35XfBavLLKelJbYfOQfaTA8Kf6yT2wyEcNdDIb8ICY1Q_t5Q36gEV1D3LsgvVsxpOdorj68TNTud2DN8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-secondary font-label text-xs uppercase tracking-[0.2rem] mb-2">Exclusive</span>
+<h3 class="text-3xl font-headline font-bold text-white mb-4">Island Sanctuaries</h3>
+<p class="text-white/70 max-w-md">Experience the pinnacle of tropical living with our handpicked villas in Phuket and Koh Samui.</p>
+</div>
+</div>
+<div class="md:col-span-5 relative group rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Sleek modern penthouse living room with grand piano and cityscape view through glass walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAr__XT7QxhcJ1UYHnZ8gEhO9KiUdaP8ptVewryDCF0YY2F7fv5TemHA5x6PYdkNT1mmXQrYzxlKAygmCy3xuQK5vxVNNJB08CuF3Trf4wjb9xrK_sYnV7uHD7wq0-PmCo8L3B0XPaZJ6I7oarttTR8Ndjcm2wJmUESoFp1BiNZBDzm1aumRdVuYjnPrfK7D4UXhSrktTclwp3mj5R1gLNunVLFKWZ8NT9UA4XmGS5BHNnQ5hSg8oNfd9rWKXrvPDNgT4DBo7ooJw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-primary font-label text-xs uppercase tracking-[0.2rem] mb-2">High-Rise</span>
+<h3 class="text-3xl font-headline font-bold text-white mb-4">Sky Living</h3>
+<p class="text-white/70">Unrivaled views of the Bangkok skyline from the city's most prestigious towers.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0f1419] w-full py-8 tonal-shift bg-[#171c21] flex justify-end items-center px-12 w-full">
+<div class="flex flex-col md:flex-row items-center gap-8 text-[#dee3ea]">
+<div class="flex gap-6 font-['Inter'] text-[0.75rem] uppercase tracking-[0.1rem]">
+<a class="text-[#dee3ea]/40 hover:text-[#a6c8ff] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-[#dee3ea]/40 hover:text-[#a6c8ff] transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<p class="font-['Inter'] text-[0.75rem] uppercase tracking-[0.1rem] text-[#dee3ea]/40">
+                © 2024 Living Gems Thailand. All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- Sample Modal (Triggered by [Read More]) -->
+<div class="fixed inset-0 z-[1000] hidden flex items-center justify-center p-6" id="info-modal">
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-md" onclick="document.getElementById('info-modal').classList.add('hidden')"></div>
+<div class="relative w-full max-w-2xl glass-card rounded-xl p-10 inner-glow shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-outline-variant/10">
+<button class="absolute top-6 right-6 material-symbols-outlined text-outline hover:text-on-surface" data-icon="close" onclick="document.getElementById('info-modal').classList.add('hidden')">close</button>
+<div class="space-y-6">
+<div class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary font-label text-xs uppercase tracking-widest border border-primary/20">Our Story</div>
+<h2 class="font-headline text-4xl font-bold tracking-tight">Living Gems: A Decade of Excellence</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-lg font-light">
+<p>At Living Gems Thailand, we believe property is more than just square meters; it's a sanctuary, an investment, and a lifestyle. For over 10 years, we have navigated the intricate Thai real estate market with precision and passion.</p>
+<p>Our team specializes in high-end photography and storytelling to ensure that every property we represent is seen in its best light. We bridge the gap between discerning foreign investors and the most exclusive developments in the Kingdom.</p>
+<p>From the bustling streets of Sukhumvit to the serene shores of Phuket, let us find your next gem.</p>
+</div>
+<button class="w-full liquid-gradient text-on-primary py-5 rounded-xl font-bold shadow-xl hover:opacity-90 transition-opacity" onclick="document.getElementById('info-modal').classList.add('hidden')">
+                    Start Your Journey
+                </button>
+</div>
+</div>
+</div>
+<script>
+        // Simple trigger for modal demonstration
+        document.querySelector('button.liquid-gradient').onclick = function() {
+            document.getElementById('info-modal').classList.remove('hidden');
+        };
+    </script>
+</body></html>
